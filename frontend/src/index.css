@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+.fascinate-inline{
+    font-family: "Fascinate Inline", system-ui;
+}
+.fascinate{
+    font-family: "Fascinate", system-ui;
+}
+.permanent-marker{
+    font-family: "Permanent Marker", system-ui;
+}
+.londrina-shadow{
+    font-family: "Londrina Shadow", system-ui;
+}
+.quicksand{
+    font-family: "Quicksand", system-ui;
+}
+
+button{
+    cursor: pointer;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.slide{
+    animation: slide 0.5s ease-in-out;
+}
