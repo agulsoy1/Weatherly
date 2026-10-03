@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -9,6 +8,8 @@ export default function App() {
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+
+  const API_URL = "https://weatherly-backend-xi.vercel.app/";
 
   const navigate = useNavigate();
 
@@ -28,7 +29,7 @@ export default function App() {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/api/weather?city=${encodeURIComponent(city)}`
+        `${API_URL}api/weather?city=${encodeURIComponent(city)}`
       );
 
       const data = await res.json();
@@ -56,7 +57,7 @@ export default function App() {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/api/weather/coords?lat=${encodeURIComponent(
+        `${API_URL}api/weather/coords?lat=${encodeURIComponent(
           latitude
         )}&lon=${encodeURIComponent(longitude)}`
       );
