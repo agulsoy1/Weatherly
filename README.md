@@ -104,4 +104,18 @@ The backend uses this API key to authenticate with the OpenWeather API.
 
 Make sure `.env` is included in `.gitignore` so your API key is not committed to GitHub.
 
-### Running the Appl
+### Running the Application
+
+Start the Node.js backend from the `backend` directory:
+
+```
+node server.js
+```
+
+Then start the React/Vite frontend:
+
+```
+npm run dev
+```
+
+Open the local Vite development URL provided in the terminal to use Weatherly.
