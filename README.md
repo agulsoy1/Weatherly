@@ -4,7 +4,7 @@ A full-stack weather application that provides current weather conditions and fo
 
 ## Live Demo
 
-[View the live application](https://weatherly-frontend.vercel.app/)
+[View the live application](https://weatherly-pi-two.vercel.app)
 
 ## Overview
 
